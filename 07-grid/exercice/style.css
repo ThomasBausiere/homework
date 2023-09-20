@@ -1,0 +1,160 @@
+*, ::after, ::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* Initialisation du body */
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 40% 40% 10%;
+    grid-template-columns: 1fr;
+    font-family:'Courier New', Courier, monospace;
+}
+h1{
+    text-align: center;
+}
+
+/* config de bases des composants + mobile first */
+header{    
+    background-color: red;
+    color:white;
+    grid-row: 1/span 1;
+}
+nav{    
+    background-color: grey;
+    color:black;
+    font-size: 2em;
+    padding-top:20px;
+    padding-bottom: 20px;
+    grid-row: 2/span 1;
+        /* préparation pour les titres dans le nav */
+    display: grid;
+    grid-template-rows: repeat(4, 25% );
+}
+main{
+    padding:20px;
+    font-size: 1.4em;
+    line-height: 30px;
+    text-align: left;
+    background-color: white;
+    grid-row: 3/span 1;
+}
+footer{    
+    background-color: black;
+    color:white;
+    grid-row: 4/span 1;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Placements des éléments du nav */
+nav h1:nth-of-type(1){
+   grid-row:1;
+}
+nav h1:nth-of-type(2){
+    grid-row:2;
+ }
+ nav h1:nth-of-type(3){
+    grid-row:3;
+ }
+ nav h1:nth-of-type(4){
+    grid-row:4;
+ }
+/* CHANING DEVICE--TABLETTES */
+
+ @media screen and (min-width: 750px) {
+    /* Modification de la grid du body */
+        body{
+        grid-template-rows: 8% 8% 76% 8%;
+        grid-template-columns: 1fr;
+        
+    }
+        /* les éléments restent en place, rien d'autre à modifier pour le body */
+
+    /* Modification de la grid du nav */
+    nav{
+        grid-template-columns: repeat(4, 25% );
+    }
+    /* modification en colones pour le nav et ses éléments */
+
+    nav h1:nth-of-type(1){
+        grid-column:1;
+        grid-row:1;
+     }
+     nav h1:nth-of-type(2){
+        grid-column:2;
+        grid-row:1;
+      }
+      nav h1:nth-of-type(3){
+        grid-column:3;
+        grid-row:1;
+      }
+      nav h1:nth-of-type(4){
+        grid-column:4;
+        grid-row:1;
+      }
+
+
+ }
+
+ /* CHANGING DEVICE - DESKTOP */
+
+ @media screen and (min-width:1300px) {
+    /* Modification de la grid du body */
+    body{
+    grid-template-rows: 8% 84% 8%;
+    grid-template-columns: repeat(10, 10%);
+    
+    }  
+/* Je teste d'autres propriétés, ici grid-area */
+    header{
+        grid-area: 1/1/2/11;
+    }
+    nav{
+        grid-area: 2/1/3/11;
+
+    }
+    main{
+        grid-area: 2/3/3/10;
+    }
+    footer{
+        grid-area: 3/1/4/11;
+    }
+
+ 
+
+ /* pas mal, c'est plus rapide ! */
+
+
+ /*  on refait le nav? C'est parti !  */
+ /*  j'ai décidé de découper en 10 parties de 10 pour tester */
+ nav{    
+    grid-template-rows: repeat(10, 10% );
+    grid-template-columns: repeat(10, 10%);
+ }
+
+ nav h1:nth-of-type(1){
+    grid-row:2/span 2;
+    grid-column: 1/span 2;
+ }
+ nav h1:nth-of-type(2){
+    grid-row:4/span 2;
+    grid-column: 1/span 2;
+
+  }
+  nav h1:nth-of-type(3){
+     grid-row:6/span 2;
+    grid-column: 1/span 2;
+
+  }
+  nav h1:nth-of-type(4){
+    grid-row:8/span 2;
+    grid-column: 1/span 2;
+
+  }
+
+  /* c'est placé, mais bon faut grossir un peu le texte sous peine d'abimer les yeux !
+   */
+
+}

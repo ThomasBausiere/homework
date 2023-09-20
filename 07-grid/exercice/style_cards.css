@@ -1,0 +1,137 @@
+*, ::after, ::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    
+}
+
+main{
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(9 1fr);
+    margin:20px;
+    justify-content: space-evenly;
+}
+
+
+body main>.cards{
+    display: grid;
+    grid-template-rows: repeat(2 50%);
+    border:1px solid black;
+    box-shadow: 0 10px 0   grey;
+    margin:20px;
+    
+}
+main .cards .img{
+    grid-row:1/span 1;
+}
+
+main .cards .description{
+    grid-row: 2/span 1;
+    
+}
+
+main .cards img{
+    min-width:20%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.description{
+    padding:10px;    
+}
+
+h1{
+    text-align: center;
+    grid-row:1/span 1;
+}
+#card1{
+    grid-row: 2/span 2;    
+}
+#card2{
+    grid-row: 4/span 2;
+}
+#card3{
+    grid-row: 6/span 2;
+    
+}
+#card4{
+    grid-row: 8/span 2;
+    
+}
+
+
+@media screen and (min-width:1300px){
+    main{
+        grid-template-columns: repeat(9 1fr);
+    }
+
+    h1{
+        text-align: center;
+        grid-row:1/span 1;
+        grid-column: 1/span 9;
+    }
+    #card1{
+        grid-row: 2/span 1;
+        grid-column: 1/span 1;    
+    }
+    #card2{
+        grid-row: 2/span 1;
+        grid-column: 2/span 1;    
+
+    }
+    #card3{
+        grid-row: 2/span 1;
+        grid-column: 3/span 1;            
+    }
+    #card4{
+        grid-row: 3/span 1;
+        grid-column: 1/span 1;    
+
+        
+    }
+
+}
+    
+
+
+
+@media screen and (min-width:750px){
+    main{
+        grid-template-rows: 10% 45% 45%;
+        grid-template-columns: repeat(2 50%);
+
+    }
+   
+    h1{
+        text-align: center;
+        grid-row: 1/span 1;
+        grid-column: 1/span 2;    
+        
+    }
+    #card1{
+        grid-row: 2/span 1;
+        grid-column: 1/span 1;    
+    }
+    #card2{
+        grid-row: 2/span 1;
+        grid-column: 2/span 1;    
+
+    }
+    #card3{
+        grid-row: 3/span 1;
+        grid-column: 1/span 1;            
+    }
+    #card4{
+        grid-row: 3/span 1;
+        grid-column: 2/span 1;    
+
+        
+    }
+
+}
