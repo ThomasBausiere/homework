@@ -69,7 +69,7 @@ h3{
 
  /* device tablette */
 
- @media screen and (min-width:750px) {
+ @media screen and (min-width:700px) {
     body{
         grid-template-columns: repeat(7, 1fr) ;
         grid-template-rows:10% 40% 5% 40% 8%;

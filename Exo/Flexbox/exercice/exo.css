@@ -64,27 +64,26 @@ background-color: greenyellow;
 
 
 #exo1 div{
-    height: 99%;
-    width: 12.3%;
-    margin: 1px;
+    width: calc(100% - 4px);
+    height: auto;
     border: 1px solid black;
 
 }
 
 /* tablette */
-@media screen and (max-width:768px){
+@media screen and (min-width:768px){
     #exo1 div{
-        width:24%;
-        height:48%;
+        width:calc(25%);
+        height:50%;
     }
     
 }
 
 /* Smartphone */
-@media screen and (max-width:395px){
+@media screen and (min-width:1300px){
     #exo1 div{
-        width:48%;
-        height:auto;
+        width:calc(12.5%);
+        height:100%;
     }
     
 }

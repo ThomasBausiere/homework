@@ -9,7 +9,7 @@ body{
     display: grid;
     grid-template-rows: 10% 40% 40% 10%;
     grid-template-columns: 1fr;
-    font-family:'Courier New', Courier, monospace;
+    font-family: monospace;
 }
 h1{
     text-align: center;
