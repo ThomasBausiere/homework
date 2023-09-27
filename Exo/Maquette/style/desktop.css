@@ -1,0 +1,28 @@
+@media screen and (min-width: 1300px) {
+    header{
+        height: 50vh;
+    }
+    section{
+        height: 25vh;
+    }
+    .card{
+        width: 25%;
+        height: 100%;
+        padding-right:2%;
+        padding-left:2%;
+    }
+    .cards{
+        height: 100%;
+    }
+
+
+    .about{
+        height: 50vh;
+        padding: 0;
+    }
+
+    .about img{
+        width: 40%;
+    }
+
+}

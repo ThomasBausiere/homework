@@ -1,0 +1,30 @@
+.cards{
+    background-color: var(--secondary-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding:10% 20%;
+}
+
+section > .card > img{
+    width: 18.5%;    
+    color:(--primary-green);
+}
+
+section > .card > h4{
+    font-family: var(--font-1);
+    font-size: 0.9rem;
+    letter-spacing: .2rem;
+    
+}
+
+section > .card >p{
+    font-family: var(--font-1);
+    font-size: .8rem;
+    color: var(--tertiary-color);
+
+}

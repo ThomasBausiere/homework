@@ -1,0 +1,84 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin:0;
+    margin:0;
+}
+:root{
+    --primary-green: #5b7e36;
+    --secondary-green: #a6e95f;
+    --secondary-color:#f1f5f8;
+    --tertiary-color:#2b3857;
+    --font-1:'Catamaran';
+    --font-2:'GrandHotel';
+}
+
+body{
+    width: 100%;
+}
+@font-face{
+    font-family: 'Catamaran';
+    src: url('../src/font/Catamaran/Catamaran-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family:'GrandHotel' ;
+    src: url(../src/font/Grand_Hotel/GrandHotel-Regular.ttf);
+}
+h1{
+    font-family: var(--font-1);
+    color:black;
+    letter-spacing: .2rem;
+    font-size: 2rem;
+}
+
+h2{
+    color:var(--primary-green);
+    font-family: var(--font-2);    
+}
+
+p{
+    line-height: 1.5em;
+    font-family: var(--font-1);
+    text-align: justify;
+    color:var(--tertiary-color);
+    font-size: 0.8em;
+    margin-bottom: 15px;
+    margin-right: 10%;
+}
+
+.btn{
+    display: flex;
+    background-color: var(--primary-green);
+    color:white;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height:50px;
+    font-family: 'Catamaran';
+    text-transform: uppercase;
+    font-weight:  bold;
+    letter-spacing: .2rem;
+    outline-offset: 3px;
+    outline: 3px solid var(--primary-green);
+    margin-top: 20px;
+}
+
+.btn2{
+    background-color: var(--primary-green);
+    font-family: var(--font-1);
+    color:white;
+    width:100px;
+    height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5% 22%;
+    text-wrap: nowrap;
+}
+
+img{
+    width:100%;
+    height:auto;
+}

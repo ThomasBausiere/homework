@@ -1,0 +1,51 @@
+header{
+    height:100vh;
+    width: 100%;
+    background-repeat: no-repeat;     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 5px solid var(--primary-green);
+    
+
+}
+header > img{
+position: absolute;
+height: 100%;
+filter: brightness(40%);
+overflow-x: hidden;
+z-index: -1;
+object-fit:cover;
+}
+
+#burger{ 
+    display: none;
+    /* position: relative;
+    float:left; */
+    content: url(../src/svg/bars-solid.svg);
+    border: 4px solid var(--primary-green);
+}
+
+header >h1, header > h2{
+    filter: brightness(100%);
+    padding-left: 20%;
+    padding-right:20%;
+    margin-top: 20px;
+}
+
+header > h1{
+    color:var(--secondary-color);
+    font-family: 'Catamaran';
+    letter-spacing: .2rem;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+header h2{
+    font-family: 'GrandHotel';
+    letter-spacing: .2rem;
+    line-height: 1.3em;
+}
