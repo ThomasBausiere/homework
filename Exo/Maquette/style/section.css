@@ -28,3 +28,8 @@ section > .card >p{
     color: var(--tertiary-color);
 
 }
+
+.card:hover{
+    background-color: white;
+    border-bottom: 3px solid var(--primary-green);
+}

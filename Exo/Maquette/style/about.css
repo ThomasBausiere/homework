@@ -49,3 +49,16 @@
     
 }
 
+
+
+.about > img{
+    width: 100%;
+    height: auto;
+    border:8px solid var(--primary-green);
+    margin-bottom: 40px;
+    background-image: var(--primary-green);   
+}
+
+.about > img:hover{
+    size: 10%;
+}

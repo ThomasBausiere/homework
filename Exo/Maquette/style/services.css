@@ -93,3 +93,10 @@
     margin-bottom: 30px;
 }
 
+.service > .btn2:hover{
+    background-color: var(--secondary-green);
+}
+
+.service:hover{
+    transform: translate(0, -5%);
+}

@@ -8,6 +8,7 @@ header{
     flex-direction: column;
     text-align: center;
     border-bottom: 5px solid var(--primary-green);
+    overflow-x: hidden;
     
 
 }
@@ -28,12 +29,6 @@ object-fit:cover;
     border: 4px solid var(--primary-green);
 }
 
-header >h1, header > h2{
-    filter: brightness(100%);
-    padding-left: 20%;
-    padding-right:20%;
-    margin-top: 20px;
-}
 
 header > h1{
     color:var(--secondary-color);
@@ -48,4 +43,45 @@ header h2{
     font-family: 'GrandHotel';
     letter-spacing: .2rem;
     line-height: 1.3em;
+}
+
+header > h1, header > h2{
+    padding-left: 20%;
+    padding-right:20%;
+    margin-top: 20px;
+    animation: menu 5s linear;
+}
+
+header > h1{
+    animation: comingfromright 5s ease-in-out;
+}
+header > h2{
+    animation: comingfromleft 5s ease-in-out;
+}
+
+@keyframes comingfromleft{
+    from{opacity: 0;
+        translate:-80% 0;
+    }
+    50%{
+        translate:10% 0;
+    }
+    to{
+        translate:0 0;
+        opacity: 100%;
+    }
+}
+
+
+@keyframes comingfromright{
+    from{opacity: 0;
+        translate:80% 0;
+    }
+    50%{
+        translate:-10% 0;
+    }
+    to{
+        translate:0 0;
+        opacity: 100%;
+    }
 }

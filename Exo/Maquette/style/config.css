@@ -78,7 +78,16 @@ p{
     text-wrap: nowrap;
 }
 
+
+.btn:hover{
+    background-color: var(--secondary-green);
+}
+.btn2:hover{
+    background-color: var(--secondary-green);
+
+}
 img{
     width:100%;
     height:auto;
 }
+
