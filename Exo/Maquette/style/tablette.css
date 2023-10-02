@@ -89,7 +89,7 @@
    }
     .product{
         width:40%;
-        height: 400vh;
+        height: 400px;
         margin: 2%;
         margin-bottom: 0;
     }
@@ -125,7 +125,20 @@
     flex-direction: row;
     flex-wrap: wrap;
  }
+    
+
+
+}
+
+@media screen and (min-width: 576px) {
+
+    .navbar{
+        width: 30vw;
+        max-width: 25rem;
     }
+
+    
+}
 
 
 

@@ -60,5 +60,6 @@
 }
 
 .about > img:hover{
-    size: 10%;
+    filter:hue-rotate(40deg) grayscale(10%);
+    transform:scale(1.03) ;
 }

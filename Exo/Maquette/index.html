@@ -8,10 +8,26 @@
 </head>
 <body>
     <header>
-        <label for="burger">
-            <!-- SVG -->
-        </label>
-        <input type="checkbox" id="burger">
+        <span class="nav-btn">
+
+            <label for="navbar">
+                <img class="navburg" src="./src/svg/bars-solid.svg" alt="">
+            </label>
+        </span>
+        <input type="checkbox" id="navbar">
+        <nav class="navbar">
+            <span class="nav-close">
+                <label for="navbar">
+                    <img class="navburg" src="./src/svg/xmark-solid.svg" alt="">
+                </label>
+            </span>
+            <ul class="nav-list">
+                <nav class="nav-item"><a href="#">Home</a></nav>
+                <nav class="nav-item"><a href="#">Skill</a></nav>
+                <nav class="nav-item"><a href="#">About</a></nav>
+                <nav class="nav-item"><a href="#">Products</a></nav>
+            </ul>
+        </nav>
 
         <h2>Over One Hundred Flavors Of</h2>
         <h1>specially crafted tea</h1>

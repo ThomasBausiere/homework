@@ -66,8 +66,9 @@
 
 
 }
-.product{
-    transform: translate(2% 0);
+.product:hover{
+    transform: scale(1.1);
+    
 }
 
 
