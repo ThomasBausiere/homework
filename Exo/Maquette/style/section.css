@@ -8,11 +8,12 @@
     justify-content: space-around;
     text-align: center;
     padding:10% 20%;
+    z-index: 0;
 }
 
 section > .card > img{
+    margin-top: 10px;
     width: 18.5%;    
-    color:(--primary-green);
 }
 
 section > .card > h4{
@@ -33,5 +34,7 @@ section > .card >p{
     background-color: white;
     border-bottom: 3px solid var(--primary-green);
     transform: scale(1.1);
+   
 
 }
+

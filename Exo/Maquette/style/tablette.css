@@ -39,6 +39,10 @@
         font-size: 1rem;
 
     }
+    section > .card > img{
+        width: 85px;
+        height: 85px;  
+    }
 
 
     .about{

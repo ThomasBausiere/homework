@@ -1,0 +1,136 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin:0;
+    margin:0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 10% 60% 20% 10%;
+    grid-template-columns: 10% 10% 5% 30% 5% 20% 10%;
+    background-image: url(./src/landscape.png);
+    background-size: cover;
+}
+
+#game{
+    width:100%;
+    height:100%;
+    grid-column: 4;
+    grid-row: 2/span 2;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    border: 2px solid black;
+    border-radius: 5%;
+    /* background-image: url(./src/pixel_card_cover.png); */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: tolife 5s linear;
+}
+
+#result {
+    background-color: antiquewhite;
+    border-radius: 5%;
+    border: 3px solid black;
+    padding: 5px;
+}
+
+#magecontent{
+    width:100%;
+    height:70%;
+    grid-column: 6/span 2;
+    grid-row: 2;
+    
+}
+
+#magecontent > h1{
+    background-color: antiquewhite;   
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#mage{
+    background-image: url(./src/mage_welcome.png);
+    background-size: cover;
+    width:100%;
+    height:100%;
+    box-shadow: 20px 40px 70px rgb(59, 75, 167);
+    border-radius: 5%;
+    animation: apparition 3s linear;
+
+}
+
+#result{
+    display: none;
+}
+
+#userGuess{
+    width: 80%;
+    height: 40px;
+    background-color: rgb(113, 129, 129);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.btncontainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 40px;
+}
+#submitGuess, #restartGame{
+    width: 50%;
+    
+}
+
+#magecontent{
+    animation:float 4s linear infinite;
+    
+}
+
+@keyframes float{
+    from{
+        translate:0 0;
+    }
+    50%{
+        translate:0 -10%;
+    }
+    to{
+        translate:0 0;
+    }
+}
+@keyframes apparition{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+
+#lore{
+    grid-row: 3;
+    grid-column: 6/span 2;
+    background-color: antiquewhite;
+    text-align: justify;
+    height: 100%;
+    font-size: 1.3rem;
+    padding: 4px;
+    animation: float 4s linear infinite;
+    opacity: .8;
+    box-shadow: 20px 40px 70px rgb(59, 75, 167);
+    border-radius: 10px;
+}
+
+#lore > h1{
+    text-align: center;
+}
+

@@ -91,3 +91,7 @@ img{
     height:auto;
 }
 
+html{
+    overflow-x:hidden ;
+    
+}

@@ -14,7 +14,10 @@
         height: 100%;
         padding: 0;
     }
-
+    .section > .cards > img{
+    width: 62.9px;
+    height: 62.9px;  
+    }
 
     .about{
         height: 50vh;
