@@ -121,8 +121,9 @@ body{
     grid-column: 6/span 2;
     background-color: antiquewhite;
     text-align: justify;
-    height: 100%;
-    font-size: 1.3rem;
+    min-height: 100%;
+    height: fit-content;
+    font-size: 1rem;
     padding: 4px;
     animation: float 4s linear infinite;
     opacity: .8;
