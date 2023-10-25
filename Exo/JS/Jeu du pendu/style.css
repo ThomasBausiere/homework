@@ -26,7 +26,7 @@
     background-size: cover;
     background-position: center;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     color:aliceblue;
   }
   #title{
@@ -102,4 +102,8 @@
   .blackboard h1{
     font-size: 2rem;
     text-align: center;
+  }
+
+  #drawing img{
+   border-radius: 50%;
   }

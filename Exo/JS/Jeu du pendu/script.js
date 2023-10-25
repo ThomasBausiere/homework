@@ -51,9 +51,10 @@ function handleLetterClick(event) {
   if (!letterFound) {
     errors++;
     document.getElementById('errors').textContent = `Erreurs: ${errors}`;
-    if (errors > 6) {
-      alert("Vous avez perdu!");
-      resetGame();
+    updateImage();
+    if (errors >= 6) {
+      console.log("Vous avez perdu!");
+      
     }
   }
 
@@ -100,3 +101,16 @@ document.addEventListener('keydown', (event) => {
     document.querySelector(`button:contains('${keyName}')`).click();
   }
 });
+
+
+function updateImage() {
+    const drawingDiv = document.getElementById('drawing');
+    // Effacer les images précédentes s'il y en a
+    drawingDiv.innerHTML = '';
+    if(errors > 0) {
+      const img = document.createElement('img');
+      img.src = `./src/img${errors}.png`;
+      img.alt = `Erreur ${errors}`;
+      drawingDiv.appendChild(img);
+    }
+  }
