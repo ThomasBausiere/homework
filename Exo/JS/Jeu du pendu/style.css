@@ -1,109 +1,117 @@
+@font-face{
+  font-family: "Halowen";
+  src: url(./Halowen.ttf);
+}
 *, ::before, ::after{
     box-sizing: border-box;
     margin:0;
     margin:0;
 }
 
-#found {
-    font-size: 5em;
-    margin-bottom: 1em;
-    height: fit-content;
-  }
+:root{
+  font-family: Halowen,'Times New Roman', Times, serif;
+
+}
+button {
+    font-size: 2em;
+    background-color: rgb(218, 128, 68);    
+}
   
-  button {
-    font-size: 3em;
-    margin: 5px;
-  }
-  
-  body{
-    display: flex;
-    flex-flow: column wrap;
+body{        
     height: 100vh;
     width: 100%;
-    background-color:  #d15656;
-    background-image: url(./src/background_stars.png);
+    background-color:#d15656;
+    background-image: url(./src/backgroundf.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    align-items: center;
-    justify-content: space-between;
     color:aliceblue;
-  }
-  #title{
-    text-align: center;
-    width: 100%;
-    height: fit-content;
-  }
-  .body> h1{
-    text-align: center;
-  }
-  #pendu{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 66% 33%;;
-    width: 100%;
-    height: 60%;
+}
 
+.playing{
+  display: grid;
+  grid-template-columns: 10%  40% 40% 10%;
+  grid-template-rows: 2% 8% 8% 60% 20% 2%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(197, 82, 82, 0.26);
+  
+}
+
+ #found{    
+    grid-row: 3;
+    grid-column: 2/span 2;
+    font-size: 3em;  
+    text-align: center;
+    color: black;
   }
-  #pendu .game #found{
+
+ .playing > h1{
     
-    
+    font-family: Halowen,'Times New Roman', Times, serif;
+
   }
 
-  .game{
-    display: grid;
-    grid-template-rows: 66% 33%;
-    grid-row: 1/span 2;
-    grid-column: 1;
-  }
 
- #found{
-    display: flex;
-    grid-row: 1;
-    height: 100%;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
  #letters{
-    grid-row: 2;
-    background-color: aliceblue;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    grid-row: 5;
+    grid-column: 2/span 2;
     opacity: .7;
-    height: 100%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
   }
 
+  #letters > button{
+    font-family: Halowen,'Times New Roman', Times, serif;
 
-  .board{
-    grid-column: 2;
-    grid-row: 1/span 2;
-    background-color: rgb(167, 173, 157);
   }
 
-  .board > .tries{
+  #letters > button:hover{
+    transform: translateY(-25%);
+  }
+  #drawing {
+    /* background: url(./src/background.png); */
+    grid-column: 2/span 2;
+    grid-row: 4;
     display: flex;
     justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-  }
+    animation:float 6s linear infinite;
 
-  .blackboard{
-    width:100%;
-    height: 100%;
-    background-color: black;
-    font-size: 3rem;
-  }
-
-  .blackboard h1{
-    font-size: 2rem;
-    text-align: center;
+    
   }
 
   #drawing img{
-   border-radius: 50%;
+    height: 100%;
+    width: auto;
+    aspect-ratio: 16/9;
+    box-shadow: 20px 40px 70px rgb(15, 4, 4);
+    border: 5px solid black;
+
   }
+  .reset{
+    grid-row: 5;
+    grid-column: 2/span 2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  #resetButton{
+    width: 50%;
+    height: 50%;
+  }
+
+  @keyframes float{
+    from{
+        scale:1;
+    }
+    50%{
+        scale:.98;
+    }
+    to{
+        scale:1;
+    }
+}
