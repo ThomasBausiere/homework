@@ -74,7 +74,7 @@ body{
     transform: translateY(-25%);
   }
   #drawing {
-    /* background: url(./src/background.png); */
+    
     grid-column: 2/span 2;
     grid-row: 4;
     display: flex;
@@ -114,4 +114,17 @@ body{
     to{
         scale:1;
     }
+}
+
+@media screen and (max-width: 750px) {
+  #drawing {
+    width: 100%;
+    height: 100%;
+  }
+  #drawing img{
+    overflow-y: hidden;
+    object-position: left;
+    object-fit: cover;
+
+  }
 }
