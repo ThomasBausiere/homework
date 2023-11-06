@@ -135,3 +135,18 @@ body{
     text-align: center;
 }
 
+@media screen and (max-width: 750px) {
+    #mage {
+        background-position: center;
+  }
+  #lore h1{
+    font-size: .6rem;
+}
+
+#lore{
+    font-size: .8rem;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+}
