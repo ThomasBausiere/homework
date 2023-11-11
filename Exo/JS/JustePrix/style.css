@@ -147,6 +147,7 @@ body{
     font-size: .8rem;
     height: 100%;
     overflow-y: scroll;
+    transform: scale(1.4);
 }
 
 }
